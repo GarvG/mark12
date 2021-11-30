@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fun-With-Triangles</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triangles</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="active">Is Triangle?</a>
+      <a href="quiz.html">Triangle Quiz</a>
+      <a href="hypotenuse.html">Find Hypotenuse</a>
+      <a href="areaoftriangle.html">Area of a Triangle</a>
+    </nav>
 
-</head>
-<body>
-    <h1>IS Triangle</h1>
-    <label for="angle1">Angle1</label>
-    <input type="number" class="angle-input"/>
-    <label for="angle2">Angle2</label>
-    <input type="number" class="angle-input"/>
-    <label for="angle3">Angle3</label>
-    <input type="number"class="angle-input"/>
-    <button id="check-button">IS Triangle?
-    </button>
-    <div id="output">
+    <h1>Is Triangles?</h1>
+    <div class="container">
+      <div class="input-container">
+        <label for="angle1">angle1</label>
+        <input type="number" class="angle-input" />
+      </div>
+
+      <div class="input-container">
+        <label for="angle2">angle2</label>
+        <input type="number" class="angle-input" />
+      </div>
+
+      <div class="input-container">
+        <label for="angle3">angle3 </label>
+        <input type="number" class="angle-input" />
+      </div>
+
+      <div class="button">
+        <button id="is-triangle-btn" type="button">Is Triangle?</button>
+      </div>
+
+      <div id="output"></div>
     </div>
-<script src="app.js"></script>
-</body>
+  </body>
+  <script src="istriangle.js"></script>
 </html>
